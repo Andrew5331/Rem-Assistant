@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Rem Assistant",
+    "slug": "rem-assistant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0B0E14"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": { "supportsTablet": true },
+    "android": {
+      "adaptiveIcon": { "backgroundColor": "#0B0E14" },
+      "permissions": ["RECORD_AUDIO"],
+      "softwareKeyboardLayoutMode": "resize"
+    },
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Rem necesita acceso al micrófono para escuchar tus consultas de voz.",
+          "recordAudioAndroid": true
+        }
+      ]
+    ]
+  }
+}
+
